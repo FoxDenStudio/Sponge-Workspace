@@ -1,9 +1,10 @@
 #!/usr/bin/env sh
-cd .. || exit 1
 
 workspace=$PWD
 
-git clone git@github.com:SpongePowered/SpongeForge.git
+cd .. || exit 1
+
+git clone --recursive git@github.com:SpongePowered/SpongeForge.git
 git clone git@github.com:FoxDenStudio/FoxCore-Common.git
 git clone git@github.com:FoxDenStudio/FoxGuard-Common.git
 git clone git@github.com:FoxDenStudio/FoxCore-Sponge.git
