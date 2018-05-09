@@ -1,0 +1,30 @@
+buildscript {
+    ext.kotlinVersion = '1.2.30'
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    }
+}
+
+
+project(':SpongeForge') {
+    apply plugin: 'java'
+    apply plugin: 'kotlin'
+
+    repositories {
+        maven {
+            name = 'minecrell'
+            url = 'http://repo.minecrell.net/releases'
+        }
+    }
+
+    dependencies {
+        compile project(':FoxGuard-Sponge')
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.3'
+}

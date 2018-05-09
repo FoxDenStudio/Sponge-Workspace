@@ -1,0 +1,13 @@
+rootProject.name = 'Workspace'
+
+include 'FoxGuard-Sponge'
+project(':FoxGuard-Sponge').projectDir = new File('../FoxGuard-Sponge')
+include 'FoxCore-Sponge'
+project(':FoxCore-Sponge').projectDir = new File('../FoxCore-Sponge')
+
+include 'SpongeForge'
+project(':SpongeForge').projectDir = new File('../SpongeForge')
+include 'SpongeCommon'
+project(':SpongeCommon').projectDir = new File('../SpongeForge/SpongeCommon')
+include 'SpongeCommon:SpongeAPI'
+project(':SpongeCommon:SpongeAPI').projectDir = new File('../SpongeForge/SpongeCommon/SpongeAPI')
