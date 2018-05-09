@@ -9,16 +9,16 @@ git clone git@github.com:FoxDenStudio/FoxGuard-Common.git
 git clone git@github.com:FoxDenStudio/FoxCore-Sponge.git
 git clone git@github.com:FoxDenStudio/FoxGuard-Sponge.git
 
-cd $workspace
+cd $workspace || exit 1
 
-./redirect.bash
+./redirect.bash || exit 1
 
-cd ../SpongeForge
+cd ../SpongeForge || exit 1
 ./gradlew setupDecompWorkspace --refresh-dependencies
 ./gradlew genIntellijRuns
 
-cd ../FoxCore-Sponge
+cd ../FoxCore-Sponge || exit 1
 ./gradlew setupDecompWorkspace --refresh-dependencies
 
-cd ..
-cd $workspace
+cd .. || exit 1
+cd $workspace || exit 1
