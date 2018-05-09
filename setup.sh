@@ -14,11 +14,11 @@ cd $workspace || exit 1
 ./redirect.bash || exit 1
 
 cd ../SpongeForge || exit 1
-./gradlew setupDecompWorkspace --refresh-dependencies
+./gradlew setupDecompWorkspace idea --refresh-dependencies
 ./gradlew genIntellijRuns
 
 cd ../FoxCore-Sponge || exit 1
-./gradlew setupDecompWorkspace --refresh-dependencies
+./gradlew setupDecompWorkspace idea --refresh-dependencies
 
 cd .. || exit 1
 cd $workspace || exit 1
