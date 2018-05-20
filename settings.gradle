@@ -7,11 +7,13 @@ project(':FoxCore-Sponge').projectDir = new File('../FoxCore-Sponge')
 
 include 'SpongeForge'
 project(':SpongeForge').projectDir = new File('../SpongeForge')
-include 'SpongeCommon'
-project(':SpongeCommon').projectDir = new File('../SpongeForge/SpongeCommon')
-include 'SpongeCommon:SpongeAPI'
-project(':SpongeCommon:SpongeAPI').projectDir = new File('../SpongeForge/SpongeCommon/SpongeAPI')
-include 'SpongeCommon:testplugins'
-project(':SpongeCommon:testplugins').projectDir = new File('../SpongeForge/SpongeCommon/testplugins')
+include 'SpongeForge:SpongeCommon'
+project(':SpongeForge:SpongeCommon').projectDir = new File('../SpongeForge/SpongeCommon')
+include 'SpongeForge:SpongeCommon:SpongeAPI'
+project(':SpongeForge:SpongeCommon:SpongeAPI').projectDir = new File('../SpongeForge/SpongeCommon/SpongeAPI')
+
 include 'SpongeForge:testmods'
 project(':SpongeForge:testmods').projectDir = new File('../SpongeForge/testmods')
+include 'SpongeForge:SpongeCommon:testplugins'
+project(':SpongeForge:SpongeCommon:testplugins').projectDir = new File('../SpongeForge/SpongeCommon/testplugins')
+
