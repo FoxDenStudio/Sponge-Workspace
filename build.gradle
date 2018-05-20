@@ -33,7 +33,7 @@ project(':SpongeForge') {
     }
 
     dependencies {
-        compile project(':FoxGuard-Sponge')
+        runtime project(':FoxGuard-Sponge')
     }
 }
 
