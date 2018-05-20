@@ -11,3 +11,7 @@ include 'SpongeCommon'
 project(':SpongeCommon').projectDir = new File('../SpongeForge/SpongeCommon')
 include 'SpongeCommon:SpongeAPI'
 project(':SpongeCommon:SpongeAPI').projectDir = new File('../SpongeForge/SpongeCommon/SpongeAPI')
+include 'SpongeCommon:testplugins'
+project(':SpongeCommon:testplugins').projectDir = new File('../SpongeForge/SpongeCommon/testplugins')
+include 'SpongeForge:testmods'
+project(':SpongeForge:testmods').projectDir = new File('../SpongeForge/testmods')

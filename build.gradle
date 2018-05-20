@@ -1,5 +1,5 @@
 buildscript {
-    ext.kotlinVersion = '1.2.30'
+    ext.kotlinVersion = '1.2.31'
     repositories {
         mavenCentral()
         maven {
@@ -20,7 +20,7 @@ buildscript {
     }
 }
 
-
+apply plugin: 'java'
 project(':SpongeForge') {
     apply plugin: 'java'
     apply plugin: 'kotlin'
