@@ -17,10 +17,12 @@ buildscript {
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.4'
     }
 }
 
-apply plugin: 'java'
+//apply plugin: 'java'
+
 project(':SpongeForge') {
     apply plugin: 'java'
     apply plugin: 'kotlin'
@@ -33,7 +35,7 @@ project(':SpongeForge') {
     }
 
     dependencies {
-        compile project(':FoxGuard-Sponge')
+        runtime project(':FoxGuard-Sponge')
     }
 }
 
