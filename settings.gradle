@@ -1,19 +1,23 @@
 rootProject.name = 'Workspace'
 
-include 'FoxGuard-Sponge'
-project(':FoxGuard-Sponge').projectDir = new File('../FoxGuard-Sponge')
-include 'FoxCore-Sponge'
-project(':FoxCore-Sponge').projectDir = new File('../FoxCore-Sponge')
+include 'FoxGuard-Common'
+project(':FoxGuard-Common').projectDir = new File('../FoxGuard-Common')
+include 'FoxCore-Common'
+project(':FoxCore-Common').projectDir = new File('../FoxCore-Common')
 
-include 'SpongeForge'
-project(':SpongeForge').projectDir = new File('../SpongeForge')
-include 'SpongeForge:SpongeCommon'
-project(':SpongeForge:SpongeCommon').projectDir = new File('../SpongeForge/SpongeCommon')
-include 'SpongeForge:SpongeCommon:SpongeAPI'
-project(':SpongeForge:SpongeCommon:SpongeAPI').projectDir = new File('../SpongeForge/SpongeCommon/SpongeAPI')
+// include 'FoxGuard-Sponge'
+// project(':FoxGuard-Sponge').projectDir = new File('../FoxGuard-Sponge')
+// include 'FoxCore-Sponge'
+// project(':FoxCore-Sponge').projectDir = new File('../FoxCore-Sponge')
 
-include 'SpongeForge:testmods'
-project(':SpongeForge:testmods').projectDir = new File('../SpongeForge/testmods')
-include 'SpongeForge:SpongeCommon:testplugins'
-project(':SpongeForge:SpongeCommon:testplugins').projectDir = new File('../SpongeForge/SpongeCommon/testplugins')
+// include 'SpongeForge'
+// project(':SpongeForge').projectDir = new File('../SpongeForge')
+// include 'SpongeForge:SpongeCommon'
+// project(':SpongeForge:SpongeCommon').projectDir = new File('../SpongeForge/SpongeCommon')
+// include 'SpongeForge:SpongeCommon:SpongeAPI'
+// project(':SpongeForge:SpongeCommon:SpongeAPI').projectDir = new File('../SpongeForge/SpongeCommon/SpongeAPI')
 
+// include 'SpongeForge:testmods'
+// project(':SpongeForge:testmods').projectDir = new File('../SpongeForge/testmods')
+// include 'SpongeForge:SpongeCommon:testplugins'
+// project(':SpongeForge:SpongeCommon:testplugins').projectDir = new File('../SpongeForge/SpongeCommon/testplugins')

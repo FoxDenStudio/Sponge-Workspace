@@ -8,6 +8,10 @@ cd .. || exit 1
 #	cd $project
 #	git push
 #done
+
+# This code should really check to see if a matching repo can be found in the root directory
+# I'll probably write that some other time.
+
 for project in Fox*/.git; do
 	project=${project%/.git}
 	echo "project:" $project
