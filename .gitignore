@@ -5,3 +5,5 @@ out/
 .idea/
 
 .DS_Store
+
+run/
