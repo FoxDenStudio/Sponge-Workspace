@@ -14,19 +14,20 @@ cd .. || exit 1
 
 for project in Fox*/.git; do
 	project=${project%/.git}
-	echo "project:" $project
-	cd $project || exit 1
+	echo "project: $project"
+	cd "$project" || exit 1
 	git submodule init
 	git submodule sync
+  git submodule update
 
 	for submodule in ?*/.git; do
 		submodule=${submodule%/.git}
 		if [ -d "../$submodule/.git" ]; then
-			echo "  submodule:" $submodule
-			cd $submodule || exit 1
+			echo "  submodule:" "$submodule"
+			cd "$submodule" || exit 1
 			#pwd
 			content="gitdir: ../../$submodule/.git"
-			echo $content > .git
+			echo "$content" > .git
 			git reset --hard HEAD
 			git clean -fd
 			cd ..

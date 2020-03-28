@@ -1,5 +1,8 @@
 build/
 out/
+classes/
+
+*/build/
 
 .gradle/
 .idea/
@@ -7,3 +10,5 @@ out/
 .DS_Store
 
 run/
+
+*.iml
