@@ -35,7 +35,7 @@ apply plugin: 'java'
      }
 
      dependencies {
-         runtime project(':FoxCore-Sponge')
+         runtimeOnly project(':FoxCore-Sponge')
      }
  }
 
