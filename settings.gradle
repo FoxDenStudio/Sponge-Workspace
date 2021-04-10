@@ -7,8 +7,8 @@ project(':FoxGuard-Common').projectDir = new File('../FoxGuard-Common')
 
 include 'FoxCore-Sponge'
 project(':FoxCore-Sponge').projectDir = new File('../FoxCore-Sponge')
-// include 'FoxGuard-Sponge'
-// project(':FoxGuard-Sponge').projectDir = new File('../FoxGuard-Sponge')
+include 'FoxGuard-Sponge'
+project(':FoxGuard-Sponge').projectDir = new File('../FoxGuard-Sponge')
 
 include 'SpongeForge'
 project(':SpongeForge').projectDir = new File('../SpongeForge')

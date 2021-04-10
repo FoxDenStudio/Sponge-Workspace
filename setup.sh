@@ -5,7 +5,7 @@ pushd .. || exit 1
 git clone --recursive git@github.com:SpongePowered/SpongeForge.git
 git clone git@github.com:FoxDenStudio/FoxCore-Common.git
 git clone git@github.com:FoxDenStudio/FoxGuard-Common.git
-git clone git@github.com:FoxDenStudio/FoxCore-Sponge.git
+git clone git@github.com:FoxDenStudio/FoxCore-Sponge.git -b rewrite
 #git clone git@github.com:FoxDenStudio/FoxGuard-Sponge.git -b $2
 
 popd || exit 1

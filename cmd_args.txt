@@ -1,0 +1,6 @@
+D:\Users\Fox\Desktop\foxcode\SpongeForge\run
+
+net.foxdenstudio.foxcore.standalone.FoxStart
+
+-Dfml.coreMods.load=org.spongepowered.mod.SpongeCoremod
+--mixin mixins.foxcore.impl.json --mixin mixins.foxcore.sponge.json --username  --password
